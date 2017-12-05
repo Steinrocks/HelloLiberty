@@ -2,8 +2,19 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>HelloLiberty</groupId>
   <artifactId>HelloLiberty</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0-SNAPSHOT</version>
   <packaging>ear</packaging>
+   <scm>
+    <developerConnection>scm:git:https://github.com/Steinrocks/hello-world-war.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+   <distributionManagement>
+    <repository>
+      <id>internal.repo</id>
+      <name>Stein Rocky</name>
+      <url>https://experience.jupitercloud.de/nexus/content/repositories/snapshots</url>
+    </repository>
+  </distributionManagement>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -20,6 +31,11 @@
         <version>3.0.0</version>
         <configuration>
           <warSourceDirectory>WebContent</warSourceDirectory>
+          <container>
+               <containerId>websphere_liberty</containerId>
+               <type>installed</type>
+               <home>192.168.188.10:81</home>
+          </container>
         </configuration>
       </plugin>
     </plugins>
