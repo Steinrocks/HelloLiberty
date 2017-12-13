@@ -34,7 +34,7 @@
           <container>
                <containerId>websphere_liberty</containerId>
                <type>installed</type>
-               <home>192.168.188.10:81</home>
+               <home>192.168.188.11:81</home>
           </container>
         </configuration>
       </plugin>
