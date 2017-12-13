@@ -12,7 +12,7 @@
     <repository>
       <id>internal.repo</id>
       <name>Stein Rocky</name>
-      <url>https://experience.jupitercloud.de/nexus/content/repositories/snapshots</url>
+      <url>http://192.168.188.10:81/nexus/content/repositories/snapshots</url>
     </repository>
   </distributionManagement>
   <build>
